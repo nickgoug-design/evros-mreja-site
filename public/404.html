@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>NORMA S.A.</title>
+  <script>
+    // Τεχνική "spa-github-pages": το GitHub Pages δεν ξέρει από React Router,
+    // οπότε κάθε άγνωστο URL καταλήγει εδώ (404.html). Αποθηκεύουμε το path
+    // που ζήτησε ο χρήστης και ανακατευθύνουμε στο index.html, το οποίο
+    // (μέσω του script στο index.html) θα το ξαναφορτώσει σωστά μέσα στο React Router.
+    var pathSegmentsToKeep = 0; // 0 = το site ζει στη ρίζα του custom domain (χωρίς subpath)
+    var l = window.location;
+    l.replace(
+      l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+      l.pathname.split("/").slice(0, 1 + pathSegmentsToKeep).join("/") + "/?/" +
+      l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
+      (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+      l.hash
+    );
+  </script>
+</head>
+<body></body>
+</html>

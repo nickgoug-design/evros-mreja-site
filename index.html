@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NORMA S.A. — Телени Мрежи и Ограждения от Гърция | Производител от 1976</title>
+    <meta
+      name="description"
+      content="NORMA S.A. — Производител на телени мрежи, ограждения и метални конструкции от Гърция (Еврос) от 1976 г. Заварени и плетени мрежи, panel, бодлива тел, габиони и др."
+    />
+    <meta property="og:title" content="NORMA S.A. — Телени Мрежи и Ограждения от Гърция | Производител от 1976" />
+    <meta property="og:description" content="NORMA S.A. — Производител на телени мрежи, ограждения и метални конструкции от Гърция (Еврос) от 1976 г. Заварени и плетени мрежи, panel, бодлива тел, габиони и др." />
+    <meta property="og:locale" content="bg_BG" />
+    <meta property="og:site_name" content="NORMA BG" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -- το πραγματικό λογότυπο. Το %BASE_URL% το αντικαθιστά αυτόματα
+         το Vite με το σωστό subpath (π.χ. /norma-site/) κατά το build. -->
+    <link rel="icon" type="image/png" href="%BASE_URL%images/norma-logo.png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%images/norma-logo.png" />
+
+    <!-- Συνέχεια της τεχνικής "spa-github-pages": ξαναγράφει το URL στη σωστή
+         μορφή ΠΡΙΝ φορτώσει το React Router, ώστε το routing να δουλέψει κανονικά -->
+    <script>
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

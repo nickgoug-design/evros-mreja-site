@@ -1,0 +1,147 @@
+/* Όλες οι κλάσεις εδώ έχουν prefix "vsh-" επίτηδες, ώστε να μη συγκρούονται
+   με τις υπάρχουσες κλάσεις του site (tag-card, mesh-line-bg, κλπ). */
+
+:root {
+  --p: 0;
+  /* Fallback στα ήδη υπάρχοντα χρώματα του site — αντικαθίστανται live
+     από τα πραγματικά χρώματα του βίντεο μόλις φορτώσει (βλ. component JS) */
+  --vsh-accent: #1F5FA8;
+  --vsh-accent-2: #5C7290;
+  --vsh-ink: #06152D;
+  --vsh-paper: #F0F3F7;
+}
+
+.vsh-wrapper {
+  position: relative;
+  height: 900vh;
+}
+
+.vsh-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--vsh-ink);
+  color: var(--vsh-paper);
+}
+
+.vsh-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+.vsh-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6,21,45,0.55) 0%, rgba(6,21,45,0.15) 30%, rgba(6,21,45,0.15) 70%, rgba(6,21,45,0.6) 100%);
+  pointer-events: none;
+}
+
+.vsh-grain {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  z-index: 50;
+}
+
+/* --- BEATS --- */
+.vsh-beat {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(24px, 6vw, 96px);
+  pointer-events: none;
+  will-change: opacity, filter, transform;
+  opacity: calc(1 - max(var(--p) - var(--center), var(--center) - var(--p)) * 16);
+  filter: blur(calc(max(var(--p) - var(--center), var(--center) - var(--p)) * 130px));
+  transform: translateY(calc((var(--center) - var(--p)) * 60px));
+}
+
+.vsh-title { flex-direction: column; gap: 10px; text-align: center; }
+.vsh-eyebrow { font-size: clamp(11px, 1.4vw, 13px); letter-spacing: 0.3em; text-transform: uppercase; color: var(--vsh-accent-2); }
+.vsh-title h1 { font-size: clamp(2.2rem, 7vw, 5.5rem); line-height: 1; }
+
+.vsh-line { flex-direction: column; gap: 20px; }
+.vsh-line .vsh-rule { width: min(60vw, 480px); height: 1px; background: var(--vsh-accent); }
+.vsh-line p { font-size: clamp(1.1rem, 2.4vw, 1.7rem); letter-spacing: 0.04em; }
+
+.vsh-number { flex-direction: column; text-align: center; }
+.vsh-number .vsh-num { font-size: clamp(5rem, 22vw, 14rem); line-height: 0.85; color: var(--vsh-accent); }
+.vsh-number .vsh-label { font-size: clamp(0.8rem, 1.6vw, 1.1rem); letter-spacing: 0.25em; text-transform: uppercase; }
+
+.vsh-spec { justify-content: flex-end; }
+.vsh-spec ul { list-style: none; text-align: right; display: flex; flex-direction: column; gap: 14px; }
+.vsh-spec li { font-size: clamp(1rem, 2.2vw, 1.5rem); display: flex; gap: 18px; justify-content: flex-end; }
+.vsh-spec .k { color: var(--vsh-accent-2); }
+.vsh-spec .v { color: var(--vsh-paper); font-weight: 600; }
+
+.vsh-paragraph { justify-content: flex-start; }
+.vsh-paragraph p { max-width: 34ch; font-size: clamp(1.15rem, 2.6vw, 1.9rem); line-height: 1.4; }
+
+.vsh-tag .vsh-tagcard {
+  background: var(--vsh-paper);
+  color: var(--vsh-ink);
+  padding: 22px 30px;
+  transform: rotate(-4deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.vsh-tag .brand { font-size: clamp(1.1rem, 2.4vw, 1.6rem); font-weight: 700; margin-top: 10px; }
+.vsh-tag .small { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--vsh-accent-2); }
+
+.vsh-split .row {
+  display: flex;
+  width: min(80vw, 760px);
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(240,243,247,0.25);
+  padding-bottom: 18px;
+}
+.vsh-split .k { font-size: clamp(0.8rem, 1.6vw, 1rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--vsh-accent-2); }
+.vsh-split .v { font-size: clamp(1.6rem, 4vw, 3rem); color: var(--vsh-paper); }
+
+.vsh-code .rows { display: flex; flex-direction: column; gap: 8px; font-size: clamp(0.85rem, 1.8vw, 1.2rem); }
+.vsh-code .rows div { display: flex; gap: 24px; }
+.vsh-code .code { color: var(--vsh-accent); }
+
+.vsh-statement { text-align: center; }
+.vsh-statement p { font-size: clamp(1.8rem, 5vw, 3.6rem); line-height: 1.1; max-width: 20ch; }
+.vsh-statement em { font-style: italic; color: var(--vsh-accent); }
+
+.vsh-end { flex-direction: column; gap: 24px; text-align: center; }
+.vsh-end h2 { font-size: clamp(1.8rem, 4.5vw, 3.2rem); }
+.vsh-end a {
+  pointer-events: auto;
+  background: var(--vsh-accent);
+  color: var(--vsh-paper);
+  padding: 16px 36px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vsh-wrapper { height: auto; }
+  .vsh-stage { position: relative; height: 70vh; }
+  .vsh-beat { position: relative; opacity: 1 !important; filter: none !important; transform: none !important; display: none; }
+  .vsh-title, .vsh-end { display: flex; }
+  .vsh-grain { display: none; }
+}
+
+@media (max-width: 640px) {
+  .vsh-spec { justify-content: center; }
+  .vsh-spec ul { text-align: center; }
+  .vsh-spec li { justify-content: center; }
+  .vsh-split .row { width: 92vw; }
+}
