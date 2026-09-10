@@ -51,7 +51,7 @@ export default function Header() {
               NORMA S.A.
             </Link>
             <span className="block font-mono text-[9px] text-white/70 tracking-wide uppercase">
-              СТОИЛУДИС ЙОАНИС А.Е.Е.
+              СТОИЛУДИС ЙОАНИС А.Б.Е.Е.
             </span>
           </div>
         </div>

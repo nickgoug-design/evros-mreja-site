@@ -8,7 +8,7 @@
     // οπότε κάθε άγνωστο URL καταλήγει εδώ (404.html). Αποθηκεύουμε το path
     // που ζήτησε ο χρήστης και ανακατευθύνουμε στο index.html, το οποίο
     // (μέσω του script στο index.html) θα το ξαναφορτώσει σωστά μέσα στο React Router.
-    var pathSegmentsToKeep = 0; // 0 = το site ζει στη ρίζα του custom domain (χωρίς subpath)
+    var pathSegmentsToKeep = 1; // 1 = крати то "/evros-mreja-site" като base
     var l = window.location;
     l.replace(
       l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +

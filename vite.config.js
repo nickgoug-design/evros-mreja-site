@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // Το site εξυπηρετείται πλέον από custom domain (evros-mreja.com), οπότε
   // τρέχει στη ρίζα του domain και όχι σε subpath — base πρέπει να είναι "/".
-  base: "/",
+  base: "/evros-mreja-site/",
 });
