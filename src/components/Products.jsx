@@ -10,12 +10,12 @@ import { useLanguage } from "../i18n/LanguageContext.jsx";
 // όταν αλλάζει η γλώσσα εμφάνισης. Το κείμενο (title/desc/label ομάδας)
 // έρχεται από το λεξικό μεταφράσεων μέσω t("products...").
 const productMeta = [
-  { code: "01", groupKey: "mesh", img: asset("/images/product-01.jpg") },
-  { code: "02", groupKey: "mesh", img: asset("/images/product-02.jpg") },
-  { code: "03", groupKey: "security", img: asset("/images/product-03.png") },
-  { code: "04", groupKey: "mesh", img: asset("/images/product-04.png") },
-  { code: "05", groupKey: "constructions", img: asset("/images/product-05.png") },
-  { code: "06", groupKey: "equipment", img: asset("/images/product-06.png") },
+  { code: "01", groupKey: "mesh", img: asset("/images/product-01.jpg"), anchor: "zavareni" },
+  { code: "02", groupKey: "mesh", img: asset("/images/product-02.jpg"), anchor: "panel" },
+  { code: "03", groupKey: "security", img: asset("/images/product-03.png"), anchor: "bodliva" },
+  { code: "04", groupKey: "mesh", img: asset("/images/product-04.png"), anchor: "zavareni" },
+  { code: "05", groupKey: "constructions", img: asset("/images/product-05.png"), anchor: "izgrazhdane-ogradi" },
+  { code: "06", groupKey: "equipment", img: asset("/images/product-06.png"), anchor: "kolichki" },
 ];
 
 const groupKeys = ["all", ...new Set(productMeta.map((p) => p.groupKey))];
@@ -146,16 +146,20 @@ export default function Products() {
                   pointerEvents: isActive ? "auto" : "none",
                 }}
               >
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  draggable={false}
-                  // Το "βαρέλι" σχήμα -- ελλειπτική στρογγυλοποίηση πάνω/κάτω άκρη
-                  style={{ borderRadius: "50% / 7%" }}
-                  className={`w-[330px] h-[420px] object-cover transition-shadow duration-500 ${
-                    isActive ? "shadow-[0_30px_60px_-10px_rgba(0,0,0,0.6)]" : "shadow-xl"
-                  }`}
-                />
+                <Link to={`/products#${p.anchor}`} tabIndex={isActive ? 0 : -1} aria-label={p.title}>
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    draggable={false}
+                    loading="lazy"
+                    decoding="async"
+                    // Το "βαρέλι" σχήμα -- ελλειπτική στρογγυλοποίηση πάνω/κάτω άκρη
+                    style={{ borderRadius: "50% / 7%" }}
+                    className={`w-[330px] h-[420px] object-cover transition-shadow duration-500 ${
+                      isActive ? "shadow-[0_30px_60px_-10px_rgba(0,0,0,0.6)] cursor-pointer" : "shadow-xl"
+                    }`}
+                  />
+                </Link>
               </div>
             );
           })}

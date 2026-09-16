@@ -42,14 +42,14 @@ const categoriesBg = [
       { name: "PVC покритие – Ø 2,60 мм", subtitle: "Отвор 55×55 мм, ролка 20 м", specs: [["Диаметър на телта", "2,60 мм"], ["Отвор на мрежата", "55×55 мм"], ["Дължина на ролка", "20 м"], ["Височина на ролка", "1,00 – 1,20 – 1,50 – 1,80 – 2,00 м"]] },
     ] },
   { code: "03", groupKey: "mesh", title: "Поцинкована мрежа на лист", tagline: "Поцинкована мрежа на лист за строителни и промишлени приложения.", desc: "Заварени поцинковани мрежи на листове, 50 бр./пакет.",
-    images: [asset("/images/panel-galvanized-1.png"), asset("/images/panel-galvanized-2.png"), asset("/images/panel-galvanized-3.jpg")],
+    images: [asset("/images/panel-galvanized-1.png"), asset("/images/panel-galvanized-3.jpg")],
     variants: [
       { name: "Лист Ø 3,00 мм", subtitle: "Поцинкована, 50 бр./пакет", specs: [["Дебелина на телта", "3,00 мм"], ["Размери", "2,00×5,00 м | 1,50×5,00 м"], ["Броя/пакет", "50"]] },
       { name: "Лист Ø 3,50 мм", subtitle: "Поцинкована, 50 бр./пакет", specs: [["Дебелина на телта", "3,50 мм"], ["Размери", "2,00×5,00 м | 1,50×5,00 м"], ["Броя/пакет", "50"]] },
       { name: "Лист Ø 4,00 мм", subtitle: "Поцинкована, 50 бр./пакет", specs: [["Дебелина на телта", "4,00 мм"], ["Размери", "2,00×5,00 м | 1,50×5,00 м"], ["Броя/пакет", "50"]] },
     ] },
   { code: "04", groupKey: "mesh", title: "NORMA Panel – Електростатично боядисани & поцинковани", tagline: "Оградни панели поцинковани или електростатично боядисани, идеални за градини, дворове и търговски обекти.", desc: "Поцинковани и PVC покрити мрежи на панелни листове 2,50 м. Цветове: RAL 6005 (зелено), 7043 (тъмно сиво), 7045 (светло сиво).",
-    images: [asset("/images/product-02.jpg"), asset("/images/norma-panel-1.png"), asset("/images/norma-panel-2.png"), asset("/images/norma-panel-3.jpg"), asset("/images/norma-panel-5.jpg"), asset("/images/norma-panel-4.png")],
+    images: [asset("/images/product-02.jpg"), asset("/images/norma-panel-1.png"), asset("/images/norma-panel-2.png"), asset("/images/norma-panel-3.jpg"), asset("/images/norma-panel-5.jpg"), asset("/images/norma-panel-4.png"), asset("/images/panel-diagram-50x100.png"), asset("/images/panel-diagram-55x200.png"), asset("/images/panel-diagram-70x200.png")],
     variants: [
       { name: "NORMA Panel PVC 50×100", subtitle: "Поцинкован + PVC покритие, Ø 4,20 мм", specs: [["Диаметър на телта", "4,20 мм"], ["Отвор", "50×100 мм"], ["Размери (Височина×Дължина)", "1,00×2,50 | 1,20×2,50 | 1,50×2,50 | 1,76×2,50 | 1,96×2,50 м"], ["RAL цветове", "6005 – 7043 – 7045"]] },
       { name: "Панел поцинкован 50×100", subtitle: "Поцинкован без боя, Ø 4,00 мм", specs: [["Диаметър на телта", "4,00 мм"], ["Отвор", "50×100 мм"], ["Размери (Височина×Дължина)", "1,00×2,50 | 1,20×2,50 | 1,50×2,50 | 1,76×2,50 | 1,96×2,50 м"]] },
@@ -128,7 +128,7 @@ const categoriesBg = [
       { name: "Навеси", subtitle: "Метални конструкции", specs: [["Изработка", "По поръчка"], ["Материал", "Поцинковани тръби & кухи профили"]] },
     ] },
   { code: "13", groupKey: "equipment", title: "Ръчни колички & Инструменти", tagline: "Ръчни колички и инструменти за селскостопанска и строителна употреба.", desc: "Електростатично боядисани ръчни колички, колички и резервни части.",
-    images: [asset("/images/product-06.png"), asset("/images/wheelbarrow-norma-1.png"), asset("/images/wheelbarrow-norma-2.jpg"), asset("/images/wheelbarrow-norma-3.jpg")],
+    images: [asset("/images/product-06.png"), asset("/images/wheelbarrow-norma-1.png"), asset("/images/wheelbarrow-norma-2.jpg"), asset("/images/wheelbarrow-norma-3.jpg"), asset("/images/wheelbarrow-dolly-1.png"), asset("/images/wheelbarrow-dolly-2.png")],
     variants: [
       { name: "Стандартна количка NORMA № 1", subtitle: "Електростатично боядисана количка", specs: [["Тип", "Стандартна"], ["Колело", "Пневматично"], ["Финиш", "Електростатично боядисано"]] },
       { name: "Усилена количка NORMA № 3", subtitle: "Тежкотоварна, усилена рамка", specs: [["Тип", "Тежкотоварна усилена"], ["Колело", "Пневматично или плътно"], ["Финиш", "Електростатично боядисано"]] },
@@ -136,7 +136,7 @@ const categoriesBg = [
       { name: "Резервни части за колички", subtitle: "Колела, гуми, кофи", specs: [["Колела", "Пневматични или плътни"], ["Кофи", "Пластмасови или метални"], ["Гуми", "Различни размери"]] },
     ] },
   { code: "14", groupKey: "constructions", title: "Изграждане на огради", tagline: "Цялостно изграждане на огради по поръчка.", desc: "Пълно изграждане на огради за парцели, земеделски земи, военни обекти тип НАТО, соларни паркове, животновъдни ферми. Нашите специализирани екипи поемат пълното изграждане и монтаж на всяка ограда, съобразена с изискванията на клиента.",
-    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png")],
+    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png"), asset("/images/fencing-real-1.jpg"), asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg")],
     variants: [
       { name: "Ограда на парцели", subtitle: "Пълна изработка с панел или мрежа", specs: [["Типове", "Електростатично боядисани панели, заварени, плетени"], ["Колове", "Кухи профили 50×50, тръби, ъглови железа"], ["Аксесоари", "Скоби, капачки, винтове, обтегачи"]] },
       { name: "Ограда на земеделски земи", subtitle: "Издръжливи конструкции за селскостопанска употреба", specs: [["Материали", "Заварена или плетена мрежа"], ["Опора", "Ъглови железа или поцинковани тръби"]] },
@@ -188,14 +188,14 @@ const categoriesEn = [
       { name: "PVC-Coated – Ø 2.60 mm", subtitle: "Grid 55×55 mm, 20m roll", specs: [["Wire diameter", "2.60 mm"], ["Mesh size", "55×55 mm"], ["Roll length", "20m"], ["Roll height", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 m"]] },
     ] },
   { code: "03", groupKey: "mesh", title: "Galvanized Mesh Sheets", desc: "Welded galvanized mesh in sheets, 50 pcs/bundle.",
-    images: [asset("/images/panel-galvanized-1.png"), asset("/images/panel-galvanized-2.png"), asset("/images/panel-galvanized-3.jpg")],
+    images: [asset("/images/panel-galvanized-1.png"), asset("/images/panel-galvanized-3.jpg")],
     variants: [
       { name: "Sheet Ø 3.00 mm", subtitle: "Galvanized, 50 pcs/bundle", specs: [["Wire thickness", "3.00 mm"], ["Dimensions", "2.00×5.00 m | 1.50×5.00 m"], ["Pieces/bundle", "50"]] },
       { name: "Sheet Ø 3.50 mm", subtitle: "Galvanized, 50 pcs/bundle", specs: [["Wire thickness", "3.50 mm"], ["Dimensions", "2.00×5.00 m | 1.50×5.00 m"], ["Pieces/bundle", "50"]] },
       { name: "Sheet Ø 4.00 mm", subtitle: "Galvanized, 50 pcs/bundle", specs: [["Wire thickness", "4.00 mm"], ["Dimensions", "2.00×5.00 m | 1.50×5.00 m"], ["Pieces/bundle", "50"]] },
     ] },
   { code: "04", groupKey: "mesh", title: "NORMA Panel – Powder-Coated & Galvanized", desc: "Galvanized and PVC-coated mesh in 2.50m panel sheets.", tagline: "Colors: RAL 6005 (green), 7043 (dark grey), 7045 (light grey).",
-    images: [asset("/images/product-02.jpg"), asset("/images/norma-panel-1.png"), asset("/images/norma-panel-2.png"), asset("/images/norma-panel-3.jpg"), asset("/images/norma-panel-5.jpg"), asset("/images/norma-panel-4.png")],
+    images: [asset("/images/product-02.jpg"), asset("/images/norma-panel-1.png"), asset("/images/norma-panel-2.png"), asset("/images/norma-panel-3.jpg"), asset("/images/norma-panel-5.jpg"), asset("/images/norma-panel-4.png"), asset("/images/panel-diagram-50x100.png"), asset("/images/panel-diagram-55x200.png"), asset("/images/panel-diagram-70x200.png")],
     variants: [
       { name: "NORMA Panel PVC 50×100", subtitle: "Galvanized + PVC-coated, Ø 4.20 mm", specs: [["Wire diameter", "4.20 mm"], ["Mesh", "50×100 mm"], ["Dimensions (H×L)", "1.00×2.50 | 1.20×2.50 | 1.50×2.50 | 1.76×2.50 | 1.96×2.50 m"], ["RAL colors", "6005 – 7043 – 7045"]] },
       { name: "Galvanized Panel 50×100", subtitle: "Galvanized, unpainted, Ø 4.00 mm", specs: [["Wire diameter", "4.00 mm"], ["Mesh", "50×100 mm"], ["Dimensions (H×L)", "1.00×2.50 | 1.20×2.50 | 1.50×2.50 | 1.76×2.50 | 1.96×2.50 m"]] },
@@ -274,7 +274,7 @@ const categoriesEn = [
       { name: "Sheds", subtitle: "Metal constructions", specs: [["Manufacturing", "Custom"], ["Material", "Galvanized pipes & square posts"]] },
     ] },
   { code: "13", groupKey: "equipment", title: "Wheelbarrows & Tools", desc: "Powder-coated wheelbarrows, trolleys and spare parts.",
-    images: [asset("/images/product-06.png"), asset("/images/wheelbarrow-norma-1.png"), asset("/images/wheelbarrow-norma-2.jpg"), asset("/images/wheelbarrow-norma-3.jpg")],
+    images: [asset("/images/product-06.png"), asset("/images/wheelbarrow-norma-1.png"), asset("/images/wheelbarrow-norma-2.jpg"), asset("/images/wheelbarrow-norma-3.jpg"), asset("/images/wheelbarrow-dolly-1.png"), asset("/images/wheelbarrow-dolly-2.png")],
     variants: [
       { name: "Standard NORMA No 1 Wheelbarrow", subtitle: "Powder-coated wheelbarrow", specs: [["Type", "Standard"], ["Wheel", "Pneumatic"], ["Finish", "Powder-coated"]]},
       { name: "Heavy-duty NORMA No 3 Wheelbarrow", subtitle: "Heavy-duty, reinforced frame", specs: [["Type", "Heavy-duty reinforced"], ["Wheel", "Pneumatic or solid"], ["Finish", "Powder-coated"]] },
@@ -282,7 +282,7 @@ const categoriesEn = [
       { name: "Wheelbarrow spare parts", subtitle: "Wheels, tires, buckets", specs: [["Wheels", "Pneumatic or solid"], ["Buckets", "Plastic or metal"], ["Tires", "Various sizes"]] },
     ] },
   { code: "14", groupKey: "constructions", title: "Fencing Construction", desc: "Complete fencing construction for plots, agricultural land, NATO-type military installations, solar parks, livestock farms. Our specialized crews undertake the full construction and installation of every fence, customized to client specifications.",
-    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png")],
+    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png"), asset("/images/fencing-real-1.jpg"), asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg")],
     variants: [
       { name: "Plot fencing", subtitle: "Full construction with panel or mesh", specs: [["Types", "Powder-coated panel, welded, chain-link"], ["Posts", "\t50×50 hollow sections, tubes, angle bars"], ["Accessories", "Clips, caps, screws, tensioners"]] },
       { name: "Agricultural land fencing", subtitle: "Durable construction for agricultural use", specs: [["Materials", "Welded or chain-link mesh"], ["Support", "Angle bars or galvanized tubes"]] },
@@ -334,6 +334,7 @@ const groupLabels = {
 
 function ImageCarousel({ images, alt, labels }) {
   const [index, setIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const hasMultiple = images.length > 1;
 
   function prev(e) {
@@ -346,24 +347,69 @@ function ImageCarousel({ images, alt, labels }) {
   }
 
   return (
-    <div className="relative w-full h-40 border-b border-ink/10 overflow-hidden group">
-      <img src={images[index]} alt={`${alt} — снимка на продукт ${index + 1}`} className="w-full h-full object-cover" />
-      {hasMultiple && (
-        <>
-          <button onClick={prev} aria-label={labels.prevImage} className="absolute left-1.5 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-ink/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-            ‹
+    <>
+      <div className="relative w-full h-64 md:h-72 border-b border-ink/10 overflow-hidden group">
+        <img
+          src={images[index]}
+          alt={`${alt} — снимка на продукт ${index + 1}`}
+          title={labels.zoomHint}
+          onClick={() => setLightboxOpen(true)}
+          loading="lazy"
+          decoding="async"
+          className="w-full h-full object-cover cursor-zoom-in"
+        />
+        {hasMultiple && (
+          <>
+            <button onClick={prev} aria-label={labels.prevImage} className="absolute left-1.5 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-ink/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              ‹
+            </button>
+            <button onClick={next} aria-label={labels.nextImage} className="absolute right-1.5 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-ink/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              ›
+            </button>
+            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
+              {images.map((_, i) => (
+                <span key={i} className={`w-1.5 h-1.5 rounded-full ${i === index ? "bg-white" : "bg-white/40"}`} />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
+      {lightboxOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setLightboxOpen(false)}
+          className="fixed inset-0 z-[100] bg-black/85 flex items-center justify-center p-4 md:p-10"
+        >
+          <button
+            onClick={() => setLightboxOpen(false)}
+            aria-label={labels.closeLightbox}
+            className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-2xl leading-none"
+          >
+            ×
           </button>
-          <button onClick={next} aria-label={labels.nextImage} className="absolute right-1.5 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-ink/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-            ›
-          </button>
-          <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
-            {images.map((_, i) => (
-              <span key={i} className={`w-1.5 h-1.5 rounded-full ${i === index ? "bg-white" : "bg-white/40"}`} />
-            ))}
-          </div>
-        </>
+
+          <img
+            src={images[index]}
+            alt={`${alt} — снимка на продукт ${index + 1}`}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-[80vh] object-contain rounded-sm"
+          />
+
+          {hasMultiple && (
+            <>
+              <button onClick={prev} aria-label={labels.prevImage} className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-xl">
+                ‹
+              </button>
+              <button onClick={next} aria-label={labels.nextImage} className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-xl">
+                ›
+              </button>
+            </>
+          )}
+        </div>
       )}
-    </div>
+    </>
   );
 }
 
@@ -371,7 +417,7 @@ export default function ProductCatalogue() {
   const { lang, t } = useLanguage();
   const categories = lang === "en" ? categoriesEn : categoriesBg;
   const [activeGroup, setActiveGroup] = useState("all");
-  const [openCodes, setOpenCodes] = useState(new Set());
+  const [openCode, setOpenCode] = useState(null);
   const [copiedAnchor, setCopiedAnchor] = useState(null);
   const [toastMessage, setToastMessage] = useState("");
 
@@ -386,12 +432,7 @@ export default function ProductCatalogue() {
   }, [toastMessage]);
 
   function toggleCode(code) {
-    setOpenCodes((prev) => {
-      const next = new Set(prev);
-      if (next.has(code)) next.delete(code);
-      else next.add(code);
-      return next;
-    });
+    setOpenCode((prev) => (prev === code ? null : code));
   }
 
   const filtered = activeGroup === "all" ? categories : categories.filter((c) => c.groupKey === activeGroup);
@@ -438,6 +479,8 @@ export default function ProductCatalogue() {
   const catalogueLabels = {
     prevImage: lang === "en" ? "Previous image" : "Предишна снимка",
     nextImage: lang === "en" ? "Next image" : "Следваща снимка",
+    closeLightbox: lang === "en" ? "Close" : "Затвори",
+    zoomHint: lang === "en" ? "Click to enlarge" : "Кликнете за увеличение",
   };
 
   return (
@@ -490,9 +533,9 @@ export default function ProductCatalogue() {
           </div>
         )}
 
-        <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+        <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {filtered.map((cat) => {
-            const isOpen = openCodes.has(cat.code);
+            const isOpen = openCode === cat.code;
             const anchorId = categoryAnchors[cat.code];
             const seoDescription = [cat.tagline, cat.desc].filter(Boolean).join(" ");
             const isCopied = copiedAnchor === anchorId;
@@ -505,7 +548,7 @@ export default function ProductCatalogue() {
                 />
                 <div className="p-5 flex flex-col flex-1">
                   <div className="flex items-start justify-between gap-3 mb-1">
-                    <h2 className="font-display font-600 text-lg text-ink">{cat.title}</h2>
+                    <h2 className="font-display font-600 text-2xl text-ink">{cat.title}</h2>
                     <button
                       type="button"
                       onClick={() => copyCategoryLink(anchorId)}
@@ -541,8 +584,8 @@ export default function ProductCatalogue() {
                       {cat.variants.map((v, vi) => (
                         <div key={vi} className="bg-white border border-ink/10 rounded-sm overflow-hidden">
                           <div className="p-3 pb-2">
-                            <div className="font-semibold text-sm text-ink mb-0.5">{v.name}</div>
-                            <div className="text-xs text-ink/75 font-medium">{v.subtitle}</div>
+                            <div className="font-semibold text-base text-ink mb-0.5">{v.name}</div>
+                            <div className="text-sm text-ink/75 font-medium">{v.subtitle}</div>
                           </div>
                           <table className="w-full border-t border-ink/10">
                             <tbody>

@@ -250,6 +250,8 @@ export default function About() {
             <img
               src={asset("/images/aboutPic.png")}
               alt="Телени изделия NORMA — производствени съоръжения"
+              loading="lazy"
+              decoding="async"
               className="relative w-[82%] h-[90%] object-cover rounded-t-[50%] shadow-2xl"
             />
           </div>
