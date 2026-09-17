@@ -418,6 +418,16 @@ export default function ProductCatalogue() {
   const categories = lang === "en" ? categoriesEn : categoriesBg;
   const [activeGroup, setActiveGroup] = useState("all");
   const [openCode, setOpenCode] = useState(null);
+
+  // Otan ftanoume se sygkekrimeno anchor (px. apo to carousel tis arxikis,
+  // i apo copied link), anoigoume automata tin antistoixi katigoria.
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (!hash) return;
+    const match = Object.entries(categoryAnchors).find(([, anchor]) => anchor === hash);
+    if (match) setOpenCode(match[0]);
+  }, []);
+
   const [copiedAnchor, setCopiedAnchor] = useState(null);
   const [toastMessage, setToastMessage] = useState("");
 

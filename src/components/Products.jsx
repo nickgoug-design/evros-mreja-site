@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ChevronLeft, ChevronRight, LayoutGrid } from "lucide-react";
 import Reveal from "./Reveal.jsx";
 import { asset } from "../utils/asset.js";
@@ -49,24 +49,31 @@ export default function Products() {
   }
 
   // --- Drag για πλοήγηση στο carousel (ποντίκι + touch, μέσω Pointer Events) ---
-  const dragRef = useRef({ isDown: false, startX: 0 });
+  const dragRef = useRef({ isDown: false, startX: 0, moved: 0 });
   const [dragOffset, setDragOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+  const navigate = useNavigate();
 
   function onPointerDown(e) {
-    dragRef.current = { isDown: true, startX: e.clientX };
+    dragRef.current = { isDown: true, startX: e.clientX, moved: 0 };
     setIsDragging(true);
     e.currentTarget.setPointerCapture?.(e.pointerId);
   }
   function onPointerMove(e) {
     if (!dragRef.current.isDown) return;
-    setDragOffset(e.clientX - dragRef.current.startX);
+    const offset = e.clientX - dragRef.current.startX;
+    dragRef.current.moved = Math.abs(offset);
+    setDragOffset(offset);
   }
   function onPointerUp() {
     if (!dragRef.current.isDown) return;
     const threshold = 60;
+    const wasTap = dragRef.current.moved < 6;
     if (dragOffset < -threshold) next();
     else if (dragOffset > threshold) prev();
+    else if (wasTap && activeItem) {
+      navigate(`/products#${activeItem.anchor}`);
+    }
     dragRef.current.isDown = false;
     setIsDragging(false);
     setDragOffset(0);
