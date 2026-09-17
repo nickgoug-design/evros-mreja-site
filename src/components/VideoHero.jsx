@@ -28,7 +28,7 @@ export default function VideoHero() {
           <p className="text-white/70 text-lg mb-9">{t("hero.subtitle")}</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="#products"
+              href="#about"
               className="bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-[0_0_0_0_rgba(31,95,168,0)] hover:shadow-[0_0_30px_8px_rgba(31,95,168,0.55)]"
             >
               {t("hero.cta")}
