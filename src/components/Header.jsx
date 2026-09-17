@@ -69,13 +69,13 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          {/* Κουμπί αλλαγής γλώσσας -- EL / EN */}
+          {/* Κουμπί αλλαγής γλώσσας -- BG / EN */}
           <div className="hidden sm:flex items-center gap-1.5 font-mono text-xs">
             <button
               onClick={() => setLang("bg")}
               className={`transition-colors ${lang === "bg" ? "text-white font-bold" : "text-white/40 hover:text-white/70"}`}
             >
-              EL
+              BG
             </button>
             <span className="text-white/30">/</span>
             <button
