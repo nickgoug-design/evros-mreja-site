@@ -10,7 +10,7 @@ import { useLanguage } from "../i18n/LanguageContext.jsx";
 // όταν αλλάζει η γλώσσα εμφάνισης. Το κείμενο (title/desc/label ομάδας)
 // έρχεται από το λεξικό μεταφράσεων μέσω t("products...").
 const productMeta = [
-  { code: "01", groupKey: "mesh", img: asset("/images/product-01.jpg"), anchor: "zavareni" },
+  { code: "01", groupKey: "mesh", img: asset("/images/product-01.jpg"), anchor: "pleteni" },
   { code: "02", groupKey: "mesh", img: asset("/images/product-02.jpg"), anchor: "panel" },
   { code: "03", groupKey: "security", img: asset("/images/product-03.png"), anchor: "bodliva" },
   { code: "04", groupKey: "mesh", img: asset("/images/product-04.png"), anchor: "zavareni" },
@@ -171,23 +171,24 @@ export default function Products() {
             );
           })}
         </div>
-      </div>
 
-      {/* Βελάκια πλοήγησης -- κυκλικά, στυλ του template έμπνευσης */}
-      <div className="flex items-center justify-center gap-4 mt-8">
+        {/* Βελάκια πλοήγησης -- δεξιά/αριστερά ΤΟΥ ΙΔΙΟΥ ΤΟΥ carousel, πάντα ορατά.
+            stopPropagation ώστε το κλικ εδώ να ΜΗΝ ενεργοποιεί το drag/tap του γονέα. */}
         <button
+          onPointerDown={(e) => e.stopPropagation()}
           onClick={prev}
           aria-label="Предишен продукт"
-          className="w-11 h-11 rounded-full border border-white/25 text-white flex items-center justify-center hover:bg-white hover:text-ink transition-colors"
+          className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-ink/70 backdrop-blur border-2 border-white/60 text-white flex items-center justify-center hover:bg-white hover:text-ink hover:border-white transition-colors shadow-lg"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft size={22} />
         </button>
         <button
+          onPointerDown={(e) => e.stopPropagation()}
           onClick={next}
           aria-label="Следващ продукт"
-          className="w-11 h-11 rounded-full border border-white/25 text-white flex items-center justify-center hover:bg-white hover:text-ink transition-colors"
+          className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-ink/70 backdrop-blur border-2 border-white/60 text-white flex items-center justify-center hover:bg-white hover:text-ink hover:border-white transition-colors shadow-lg"
         >
-          <ChevronRight size={20} />
+          <ChevronRight size={22} />
         </button>
       </div>
 
