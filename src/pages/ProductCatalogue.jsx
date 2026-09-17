@@ -94,7 +94,7 @@ const categoriesBg = [
       { name: "Права поцинкована тел (пръти)", subtitle: "Нарязана на пръти за огради & конструкции", specs: [["Дебелина", "4–5 мм"], ["Височина на пръта", "1,00 – 3,00 м"]] },
     ] },
   { code: "09", groupKey: "materials", title: "Колове & Тръби", tagline: "Поцинковани колове и тръби за укрепване на огради и конструкции.", desc: "Кухи профили, поцинковани тръби и ъглови железа за опора на огради.",
-    images: [asset("/images/posts-tubes-1.jpg"), asset("/images/posts-painted-2.jpg"), asset("/images/posts-painted-3.jpg"), asset("/images/posts-tubes-4.jpg"), asset("/images/posts-angles-5.jpg")],
+    images: [asset("/images/posts-tubes-1.jpg"), asset("/images/posts-painted-2.jpg"), asset("/images/posts-painted-3.jpg"), asset("/images/posts-tubes-4.jpg"), asset("/images/posts-angles-5.jpg"), asset("/images/posts-square-new.jpg")],
     variants: [
       { name: "Кух профил 50x50 PVC покритие – дебелина 2,00 мм", subtitle: "С основа, PVC покритие", specs: [["Размери", "50×50 мм"], ["Дебелина", "2,00 мм"], ["Налични височини", "1,00 – 1,20 – 1,50 – 1,76 – 1,96 м"]] },
       { name: "Кух профил 50x50 PVC покритие – дебелина 1,50 мм", subtitle: "С основа, PVC покритие", specs: [["Размери", "50×50 мм"], ["Дебелина", "1,50 мм"], ["Налични височини", "1,00 – 1,20 – 1,50 – 1,76 – 1,96 м"]] },
@@ -240,7 +240,7 @@ const categoriesEn = [
       { name: "Straight galvanized wire (rods)", subtitle: "Cut in bars for fencing & constructions", specs: [["Thickness", "4–5 mm"], ["Bar height", "1.00 – 3.00 m"]] },
     ] },
   { code: "09", groupKey: "materials", title: "Posts & Tubes",  desc: "Hollow sections, galvanized tubes and angle bars for fence support.",
-    images: [asset("/images/posts-tubes-1.jpg"), asset("/images/posts-painted-2.jpg"), asset("/images/posts-painted-3.jpg"), asset("/images/posts-tubes-4.jpg"), asset("/images/posts-angles-5.jpg")],
+    images: [asset("/images/posts-tubes-1.jpg"), asset("/images/posts-painted-2.jpg"), asset("/images/posts-painted-3.jpg"), asset("/images/posts-tubes-4.jpg"), asset("/images/posts-angles-5.jpg"), asset("/images/posts-square-new.jpg")],
     variants: [
       { name: "Square Post 50x50 PVC-Coated – 2.00 mm thick", subtitle: "With base plate, PVC-coated", specs: [["Dimensions", "50×50 mm"], ["Thickness", "2.00 mm"], ["Available heights", "1.00 – 1.20 – 1.50 – 1.76 – 1.96 m"]] },
       { name: "Square Post 50x50 PVC-Coated – 1.50 mm thick", subtitle: "With base plate, PVC-coated", specs: [["Dimensions", "50×50 mm"], ["Thickness", "1.50 mm"], ["Available heights", "1.00 – 1.20 – 1.50 – 1.76 – 1.96 m"]] },
