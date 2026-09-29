@@ -44,13 +44,13 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link to="/">
             {/* Πραγματικό λογότυπο */}
-            <img src={asset("/images/norma-logo.png")} alt="NORMA S.A. лого" className="w-10 h-10 object-contain" />
+            <img src={asset("/images/norma-logo.png")} alt="NORMA S.A. лого" className="w-14 h-14 object-contain" />
           </Link>
           <div className="leading-tight">
-            <Link to="/" className="block font-display font-600 text-white text-sm tracking-wide hover:text-accent transition-colors">
+            <Link to="/" className="block font-display font-600 text-white text-2xl tracking-wide hover:text-accent transition-colors">
               NORMA S.A.
             </Link>
-            <span className="block font-mono text-[9px] text-white/70 tracking-wide uppercase">
+            <span className="block font-mono text-sm text-white/70 tracking-wide uppercase">
               СТОИЛУДИС ЙОАНИС А.Б.Е.Е.
             </span>
           </div>
