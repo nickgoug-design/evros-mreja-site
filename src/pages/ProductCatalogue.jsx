@@ -15,7 +15,7 @@ import { useLanguage } from "../i18n/LanguageContext.jsx";
 
 const categoriesBg = [
   { code: "01", groupKey: "mesh", title: "Заварени телени мрежи", tagline: "Заварени телени мрежи с висока здравина за селскостопански и промишлени огради, производство NORMA S.A.", desc: "Електрозаварени мрежи на ролка — пълна гама квадрати, височини и дебелини на телта.",
-    images: [asset("/images/product-04.png"), asset("/images/pontarista-1.png"), asset("/images/pontarista-2.jpg"), asset("/images/pontarista-3.png")],
+    images: [asset("/images/product-04.png"), asset("/images/pontarista-1.png"), asset("/images/pontarista-2.jpg"), asset("/images/pontarista-3.png"), asset("/images/pontarista-4.jpg")],
     variants: [
       { name: "Заварена мрежа 60×100 мм (Ø 3.00/2.40)", subtitle: "Поцинкована, ролка 20 м", specs: [["Отвор", "60×100 мм"], ["Тел", "Ø 3.00 / 2.40 мм"], ["Дължина на ролка", "20 м"], ["Височини", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 м"]] },
       { name: "Заварена мрежа 60×100 мм (Ø 2.70/2.40)", subtitle: "Поцинкована, ролка 20 м", specs: [["Отвор", "60×100 мм"], ["Тел", "Ø 2.70 / 2.40 мм"], ["Дължина на ролка", "20 м"], ["Височини", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 м"]] },
@@ -136,7 +136,7 @@ const categoriesBg = [
       { name: "Резервни части за колички", subtitle: "Колела, гуми, кофи", specs: [["Колела", "Пневматични или плътни"], ["Кофи", "Пластмасови или метални"], ["Гуми", "Различни размери"]] },
     ] },
   { code: "14", groupKey: "constructions", title: "Изграждане на огради", tagline: "Цялостно изграждане на огради по поръчка.", desc: "Пълно изграждане на огради за парцели, земеделски земи, военни обекти тип НАТО, соларни паркове, животновъдни ферми. Нашите специализирани екипи поемат пълното изграждане и монтаж на всяка ограда, съобразена с изискванията на клиента.",
-    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png"), asset("/images/fencing-real-1.jpg"), asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg")],
+    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png"), asset("/images/fencing-real-1.jpg"), asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg"), asset("/images/fencing-real-5.jpg"), asset("/images/fencing-real-6.jpg"), asset("/images/fencing-real-7.jpg")],
     variants: [
       { name: "Ограда на парцели", subtitle: "Пълна изработка с панел или мрежа", specs: [["Типове", "Електростатично боядисани панели, заварени, плетени"], ["Колове", "Кухи профили 50×50, тръби, ъглови железа"], ["Аксесоари", "Скоби, капачки, винтове, обтегачи"]] },
       { name: "Ограда на земеделски земи", subtitle: "Издръжливи конструкции за селскостопанска употреба", specs: [["Материали", "Заварена или плетена мрежа"], ["Опора", "Ъглови железа или поцинковани тръби"]] },
@@ -161,7 +161,7 @@ const categoriesBg = [
 
 const categoriesEn = [
   { code: "01", groupKey: "mesh", title: "Welded Wire Mesh", desc: "Electrowelded wire mesh in rolls - full range of mesh sizes, heights and wire diameters.",
-    images: [asset("/images/product-04.png"), asset("/images/pontarista-1.png"), asset("/images/pontarista-2.jpg"), asset("/images/pontarista-3.png")],
+    images: [asset("/images/product-04.png"), asset("/images/pontarista-1.png"), asset("/images/pontarista-2.jpg"), asset("/images/pontarista-3.png"), asset("/images/pontarista-4.jpg")],
     variants: [
       { name: "Welded  60×100 mm (Ø 3.00/2.40)", subtitle: "Galvanized, 20m roll", specs: [["Mesh", "60×100 mm"], ["Wire", "Ø 3.00 / 2.40 mm"], ["Roll length", "20m"], ["Heights", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 m"]] },
       { name: "Welded  60×100 mm (Ø 2.70/2.40)", subtitle: "Galvanized, 20m roll", specs: [["Mesh", "60×100 mm"], ["Wire", "Ø 2.70 / 2.40 mm"], ["Roll length", "20m"], ["Heights", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 m"]] },
@@ -282,7 +282,7 @@ const categoriesEn = [
       { name: "Wheelbarrow spare parts", subtitle: "Wheels, tires, buckets", specs: [["Wheels", "Pneumatic or solid"], ["Buckets", "Plastic or metal"], ["Tires", "Various sizes"]] },
     ] },
   { code: "14", groupKey: "constructions", title: "Fencing Construction", desc: "Complete fencing construction for plots, agricultural land, NATO-type military installations, solar parks, livestock farms. Our specialized crews undertake the full construction and installation of every fence, customized to client specifications.",
-    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png"), asset("/images/fencing-real-1.jpg"), asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg")],
+    images: [asset("/images/product-05.png"), asset("/images/norma-panel-2.png"), asset("/images/fencing-enhanced-1.png"), asset("/images/fencing-enhanced-2.png"), asset("/images/fencing-real-1.jpg"), asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg"), asset("/images/fencing-real-5.jpg"), asset("/images/fencing-real-6.jpg"), asset("/images/fencing-real-7.jpg")],
     variants: [
       { name: "Plot fencing", subtitle: "Full construction with panel or mesh", specs: [["Types", "Powder-coated panel, welded, chain-link"], ["Posts", "\t50×50 hollow sections, tubes, angle bars"], ["Accessories", "Clips, caps, screws, tensioners"]] },
       { name: "Agricultural land fencing", subtitle: "Durable construction for agricultural use", specs: [["Materials", "Welded or chain-link mesh"], ["Support", "Angle bars or galvanized tubes"]] },
