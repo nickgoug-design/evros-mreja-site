@@ -56,12 +56,12 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           {links.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="font-mono text-xs font-semibold uppercase tracking-[0.15em] text-white/90 hover:text-white transition-opacity"
+              className="font-mono text-2xl font-semibold uppercase tracking-[0.1em] text-white/90 hover:text-white transition-opacity"
             >
               {link.label}
             </Link>
@@ -111,7 +111,7 @@ export default function Header() {
       <div className={`md:hidden overflow-hidden transition-[max-height] duration-300 bg-ink-light ${menuOpen ? "max-h-96" : "max-h-0"}`}>
         <nav className="flex flex-col px-6 py-4 gap-4">
           {links.map((link) => (
-            <Link key={link.to} to={link.to} onClick={() => setMenuOpen(false)} className="text-white/70 hover:text-white text-sm">
+            <Link key={link.to} to={link.to} onClick={() => setMenuOpen(false)} className="text-white/70 hover:text-white text-xl">
               {link.label}
             </Link>
           ))}
