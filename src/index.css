@@ -4,6 +4,13 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 18.5px;
+  }
 }
 
 body {
