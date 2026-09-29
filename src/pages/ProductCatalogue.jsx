@@ -31,7 +31,7 @@ const categoriesBg = [
       { name: "Заварена мрежа PVC 50×100 мм (Ø 2.50)", subtitle: "PVC покритие RAL 6005 (зелено), ролка 25 м", specs: [["Отвор", "50×100 мм"], ["Тел", "Ø 2.50 мм PVC"], ["Цвят", "RAL 6005"], ["Дължина на ролка", "25 м"], ["Височини", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 м"]] },
     ] },
   { code: "02", groupKey: "mesh", title: "Плетени (оплетени) телени мрежи", tagline: "Плетена телена мрежа (chain link) за огради на спортни площадки, парцели и промишлени зони.", desc: "Плетени (chain-link) телени мрежи на ролка, поцинковани или PVC покрити. Серия «ЕВРОС 1».",
-    images: [asset("/images/product-01.jpg"), asset("/images/diktyota-1.jpg"), asset("/images/diktyota-2.png")],
+    images: [asset("/images/product-01.jpg"), asset("/images/diktyota-1.jpg"), asset("/images/diktyota-2.png"), asset("/images/diktyota-3.jpg")],
     variants: [
       { name: "№ 10 – Ø 1,5 мм", subtitle: "Отвор 40×40 мм, ролка 25 м", specs: [["Диаметър на телта", "1,5 мм"], ["Отвор на мрежата", "40×40 мм"], ["Дължина на ролка", "25 м"], ["Височина на ролка", "1,00 – 1,20 – 1,50 – 1,80 – 2,00 м"]] },
       { name: "№ 12 – Ø 1,8 мм", subtitle: "Отвор 40×40 / 50×50 / 55×55 / 65×65 мм, ролка 25 м", specs: [["Диаметър на телта", "1,8 мм"], ["Отвор на мрежата", "40×40 – 50×50 – 55×55 – 65×65 мм"], ["Дължина на ролка", "25 м"], ["Височина на ролка", "1,00 – 1,20 – 1,50 – 1,80 – 2,00 м"]] },
@@ -177,7 +177,7 @@ const categoriesEn = [
       { name: "Welded  PVC 50×100 mm (Ø 2.50)", subtitle: "PVC-coated RAL 6005 (green), 25mroll", specs: [["Mesh", "50×100 mm"], ["Wire", "Ø 2.50 mm PVC"], ["Color", "RAL 6005"], ["Roll length", "25m"], ["Heights", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 m"]] },
     ] },
   { code: "02", groupKey: "mesh", title: "Chain-Link Wire Mesh", desc: "Chain-link wire mesh in rolls, galvanized or PVC coated. Series «EVROS 1».",
-    images: [asset("/images/product-01.jpg"), asset("/images/diktyota-1.jpg"), asset("/images/diktyota-2.png")],
+    images: [asset("/images/product-01.jpg"), asset("/images/diktyota-1.jpg"), asset("/images/diktyota-2.png"), asset("/images/diktyota-3.jpg")],
     variants: [
       { name: "No 10 – Ø 1.5 mm", subtitle: "Grid 40×40 mm, 25m roll", specs: [["Wire diameter", "1.5 mm"], ["Mesh size", "40×40 mm"], ["Roll length", "25m"], ["Roll height", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 m"]] },
       { name: "No 12 – Ø 1.8 mm", subtitle: "Grid 40×40 / 50×50 / 55×55 / 65×65 mm, 25m roll", specs: [["Wire diameter", "1.8 mm"], ["Mesh size", "40×40 – 50×50 – 55×55 – 65×65 mm"], ["Roll length", "25m"], ["Roll height", "1.00 – 1.20 – 1.50 – 1.80 – 2.00 m"]] },
