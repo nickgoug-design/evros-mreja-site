@@ -145,7 +145,7 @@ const categoriesBg = [
       { name: "Ограда на животновъдни ферми", subtitle: "Специални конструкции за добитък", specs: [["Материали", "Заварена мрежа, ъглови железа"], ["Тип", "Издръжлива конструкция"]] },
     ] },
   { code: "15", groupKey: "constructions", title: "Земеделски съоръжения", tagline: "Метални конструкции за земеделски съоръжения и животновъдни ферми.", desc: "Колчета и оборудване за киви, аспержи, лозя, оранжерии.",
-    images: [asset("/images/agricultural-1.png")],
+    images: [asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg")],
     variants: [
       { name: "Колчета за земеделски земи", subtitle: "За киви, аспержи, лозя", specs: [["Материал", "Поцинковани тръби & кухи профили"], ["Височина", "1.50 – 2.00 – 2.50 – 3.00 м"], ["Изработка", "По поръчка"]] },
       { name: "Оранжерии", subtitle: "Метална рамка, поцинкована", specs: [["Рамка", "Поцинковани тръби"], ["Тип", "Тунел или поликарбонат"], ["Изработка", "По поръчка"]] },
@@ -291,7 +291,7 @@ const categoriesEn = [
       { name: "Livestock farm fencing", subtitle: "Special constructions for livestock", specs: [["Materials", "Welded mesh, angle irons"], ["Type", "Durable construction"]] },
     ] },
   { code: "15", groupKey: "constructions", title: "Agricultural Installations", desc: "Posts and equipment for kiwi, asparagus, vineyards and greenhouses.",
-    images: [asset("/images/agricultural-1.png")],
+    images: [asset("/images/fencing-real-2.jpg"), asset("/images/fencing-real-3.jpg"), asset("/images/fencing-real-4.jpg")],
     variants: [
       { name: "Farmland post support", subtitle: "For kiwi, asparagus, vineyards", specs: [["Material", "Galvanized tubes & hollow sections"], ["Height", "1.50 – 2.00 – 2.50 – 3.00 m"], ["Manufacturing", "Custom"]] },
       { name: "Greenhouses", subtitle: "Metal frame, galvanized", specs: [["Frame", "Galvanized tubes"], ["Type", "Tunnel or polycarbonate"], ["Manufacturing", "Custom"]] },
