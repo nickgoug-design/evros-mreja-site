@@ -44,7 +44,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link to="/">
             {/* Πραγματικό λογότυπο */}
-            <img src={asset("/images/norma-logo.png")} alt="NORMA S.A. лого" className="w-14 h-14 object-contain" />
+            <img src={asset("/images/norma-logo.png")} alt="NORMA S.A. лого" className="w-16 h-16 object-contain" />
           </Link>
           <div className="leading-tight">
             <Link to="/" className="block font-display font-600 text-white text-2xl tracking-wide hover:text-accent transition-colors">
@@ -61,7 +61,7 @@ export default function Header() {
             <Link
               key={link.to}
               to={link.to}
-              className="font-mono text-2xl font-semibold uppercase tracking-[0.1em] text-white/90 hover:text-white transition-opacity"
+              className="font-mono text-xl font-semibold uppercase tracking-[0.1em] text-white/90 hover:text-white transition-opacity"
             >
               {link.label}
             </Link>
